@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 
 interface Project {
@@ -81,12 +82,12 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
                                             <p className="text-gray-600 mb-4 leading-relaxed break-words">{project.description}</p>
                                             <div className="flex justify-between items-center">
                                                 <span className="text-sm font-semibold text-green-600">{project.metrics}</span>
-                                                <a href="/contact">
+                                                <link to="/contact">
                                                     <button className="text-purple-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all duration-300">
                                                         Unlock With Premium
                                                         <ExternalLink className="w-4 h-4" />
                                                     </button>
-                                                </a>
+                                                </link>
                                             </div>
                                         </div>
                                     </div>
