@@ -5,21 +5,38 @@ import { Link, useNavigate } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import Footer from './components/Footer';
 import { FormEvent } from 'react';
+import  { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 function HomePage() {
     const navigate = useNavigate();
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+        setIsSubmitting(true);
 
         const form = event.currentTarget;
-        const formData = new FormData(form);
 
-        console.log(Object.fromEntries(formData.entries())); // Debugging
-
-        // ✅ Netlify automatically handles submission, we just redirect after
-        navigate("/thank-you");
+        emailjs
+            .sendForm(
+                "service_e31pvk9", // ✅ your service ID
+                "template_6iiqyqt", // ✅ your template ID
+                form,
+                "BnnRJRnPM85DCT3Ee" // ✅ your public key
+            )
+            .then(
+                () => {
+                    console.log("Email sent successfully!");
+                    navigate("/thank-you");
+                },
+                (error) => {
+                    console.error("Email send error:", error);
+                    setIsSubmitting(false);
+                }
+            );
     };
+
 
     return (
         <div className="min-h-screen bg-white">
@@ -377,6 +394,7 @@ function HomePage() {
                 </div>
             </section>
 
+
             {/* Contact Section */}
             {/* Contact Section */}
             <section id="contact" className="py-20 bg-gradient-to-br from-purple-50 to-blue-50">
@@ -394,16 +412,7 @@ function HomePage() {
                     </div>
 
                     <div className="max-w-2xl mx-auto">
-                        {/* React Router form handling */}
-                        <form
-                            onSubmit={handleSubmit}
-                            name="contact"
-                            method="POST"
-                            action="https://formspree.io/f/mkgqjpen"
-                            className="bg-white p-8 rounded-3xl shadow-xl"
-                        >
-                            {/* Netlify hidden fields */}
-                            <input type="hidden" name="form-name" value="contact" />
+                        <form onSubmit={handleSubmit} className="bg-white p-8 rounded-3xl shadow-xl">
                             <div className="grid md:grid-cols-2 gap-6 mb-6">
                                 <div>
                                     <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -446,9 +455,11 @@ function HomePage() {
 
                             <button
                                 type="submit"
-                                className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-4 rounded-xl text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                                disabled={isSubmitting}
+                                className={`w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-4 rounded-xl text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 ${isSubmitting ? "opacity-70 cursor-not-allowed" : ""
+                                    }`}
                             >
-                                Let's Build Together
+                                {isSubmitting ? "Submitting..." : "Let's Build Together"}
                             </button>
                         </form>
                     </div>

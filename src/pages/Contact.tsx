@@ -4,6 +4,8 @@ import { Mail, Phone, MapPin, Clock, CheckCircle, Star, ArrowRight, MessageCircl
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+import emailjs from "@emailjs/browser";
+
 const Contact = () => {
   const navigate = useNavigate();
 
@@ -12,6 +14,7 @@ const Contact = () => {
   }, []);
 
   const [openFAQ, setOpenFAQ] = useState<number | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const toggleFAQ = (index: number) => {
     setOpenFAQ(openFAQ === index ? null : index);
@@ -19,17 +22,29 @@ const Contact = () => {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setIsSubmitting(true);
 
-    // Collect form data (for Netlify later)
     const form = event.currentTarget;
-    const formData = new FormData(form);
 
-    // Optional: log values for debugging
-    console.log(Object.fromEntries(formData.entries()));
-
-    // Redirect to thank-you page
-    navigate("/thank-you");
+    emailjs
+      .sendForm(
+        "service_e31pvk9",       // your service ID
+        "template_6iiqyqt",      // your template ID
+        form,
+        "BnnRJRnPM85DCT3Ee"      // your public key
+      )
+      .then(
+        () => {
+          setIsSubmitting(false);
+          navigate("/thank-you");
+        },
+        (error) => {
+          console.error("EmailJS Error:", error);
+          setIsSubmitting(false);
+        }
+      );
   };
+
 
 
   return (
@@ -68,18 +83,8 @@ const Contact = () => {
               <form
                 onSubmit={handleSubmit}
                 name="contact"
-                method="POST"
-                action="https://formspree.io/f/mkgqjpen"
                 className="space-y-6"
               >
-                {/* Hidden Netlify inputs */}
-                <input type="hidden" name="form-name" value="contact" />
-                <p className="hidden">
-                  <label>
-                    Don’t fill this out if you’re human: <input name="bot-field" />
-                  </label>
-                </p>
-
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -141,10 +146,11 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-4 rounded-xl text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2"
+                  disabled={isSubmitting}
+                  className={`w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-4 rounded-xl text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2 ${isSubmitting ? "opacity-70 cursor-not-allowed" : ""}`}
                 >
                   <MessageCircle className="w-5 h-5" />
-                  Send Message & Get Quote
+                  {isSubmitting ? "Sending..." : "Send Message & Get Quote"}
                 </button>
               </form>
 

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const navigate = useNavigate();
@@ -10,16 +11,17 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     const form = e.currentTarget;
-    const formData = new FormData(form);
 
     try {
-      await fetch("/", {
-        method: "POST",
-        body: formData,
-      });
+      await emailjs.sendForm(
+        "service_e31pvk9",        // your Service ID
+        "template_6iiqyqt",       // your Template ID
+        form,                     // the form reference
+        "BnnRJRnPM85DCT3Ee"       // your Public Key
+      );
       navigate("/thank-you");
     } catch (error) {
-      console.error("Form submission error:", error);
+      console.error("EmailJS error:", error);
       setIsSubmitting(false);
     }
   };
@@ -29,20 +31,7 @@ const ContactForm = () => {
       <h3 className="text-2xl font-bold text-gray-900 mb-6">
         Ready to Get Started?
       </h3>
-      <form
-        name="contact"
-        method="POST"
-        action="https://formspree.io/f/mkgqjpen"
-        onSubmit={handleSubmit}
-      >
-        {/* Required hidden input for Netlify */}
-        <input type="hidden" name="form-name" value="contact" />
-        <p className="hidden">
-          <label>
-            Don’t fill this out if you’re human: <input name="bot-field" />
-          </label>
-        </p>
-
+      <form name="contact" onSubmit={handleSubmit}>
         <div className="grid md:grid-cols-2 gap-6 mb-6">
           <div>
             <label className="block text-sm font-semibold text-gray-700 mb-2">
