@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Crown, ExternalLink } from 'lucide-react';
 
 interface Project {
     title: string;
@@ -46,7 +46,8 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
                             <div className="flex justify-between items-center">
                                 <span className="text-sm font-semibold text-green-600">{project.metrics}</span>
                                 <button className="text-sm text-purple-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all duration-300">
-                                    Unlock with Premium
+                                    Unlock With Premium
+                                    <Crown className="w-4 h-4" />
                                 </button>
                             </div>
                         </div>
@@ -80,10 +81,12 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
                                             <p className="text-gray-600 mb-4 leading-relaxed break-words">{project.description}</p>
                                             <div className="flex justify-between items-center">
                                                 <span className="text-sm font-semibold text-green-600">{project.metrics}</span>
+                                                <a href="/contact">
                                                     <button className="text-purple-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all duration-300">
                                                         Unlock With Premium
-                                                        <Crown className="w-4 h-4" />
-                                                    </button>   
+                                                        <ExternalLink className="w-4 h-4" />
+                                                    </button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
