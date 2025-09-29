@@ -69,8 +69,7 @@ const Contact = () => {
                 onSubmit={handleSubmit}
                 name="contact"
                 method="POST"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
+                action="https://formspree.io/f/mkgqjpen"
                 className="space-y-6"
               >
                 {/* Hidden Netlify inputs */}

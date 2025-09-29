@@ -32,8 +32,7 @@ const ContactForm = () => {
       <form
         name="contact"
         method="POST"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
+        action="https://formspree.io/f/mkgqjpen"
         onSubmit={handleSubmit}
       >
         {/* Required hidden input for Netlify */}

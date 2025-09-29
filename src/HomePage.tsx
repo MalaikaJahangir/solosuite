@@ -399,8 +399,7 @@ function HomePage() {
                             onSubmit={handleSubmit}
                             name="contact"
                             method="POST"
-                            data-netlify="true"
-                            netlify-honeypot="bot-field"
+                            action="https://formspree.io/f/mkgqjpen"
                             className="bg-white p-8 rounded-3xl shadow-xl"
                         >
                             {/* Netlify hidden fields */}
