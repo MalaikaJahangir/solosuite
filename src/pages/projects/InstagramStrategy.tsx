@@ -65,7 +65,7 @@ const InstagramStrategy = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
-                to="/#contact"
+                to="/contact"
                 className="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2"
               >
                 <Zap className="w-5 h-5" />
@@ -317,7 +317,7 @@ const InstagramStrategy = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              to="/#contact"
+              to="/contact"
               className="bg-white text-pink-600 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2 justify-center"
             >
               <TrendingUp className="w-5 h-5" />
