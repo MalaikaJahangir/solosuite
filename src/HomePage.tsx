@@ -136,10 +136,10 @@ function HomePage() {
                                 Meet <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Malaika Jahangir</span>
                             </h2>
                             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                As the founder of SoloSuite, Malaika Jahangir is a young entrepreneur and  developer driven by innovation and the desire to help businesses thrive in the digital world.
+                                As the founder of SoloSuite, Malaika Jahangir is an entrepreneur and  developer driven by innovation and the desire to help businesses thrive in the digital world.
                             </p>
                             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                                With a passion for creating digital solutions that make a real impact, Malaika combines technical expertise with creative vision to deliver exceptional results for startups, entrepreneurs, and small businesses.
+                                With a passion for creating digital solutions that make a real impact & combining technical expertise with creative vision to deliver exceptional results for startups, entrepreneurs, and small businesses.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <div className="bg-white p-6 rounded-2xl shadow-sm">
