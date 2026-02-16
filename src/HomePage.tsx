@@ -117,9 +117,9 @@ function HomePage() {
                                     <ArrowRight className="w-5 h-5" />
                                 </button>
                             </a>
-                            <a href="/#projects">
+                            <a href="/contact">
                                 <button className="border border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-medium hover:border-gray-400 transition-colors">
-                                    View Our Work
+                                    Reach Out
                                 </button>
                             </a>
                         </div>
