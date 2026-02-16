@@ -95,7 +95,7 @@ const Footer = () => {
         </div>
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
           <p className="break-words text-xs md:text-sm">
-            &copy; 2024 SoloSuite. All rights reserved. Founded by Malaika Jahangir.
+            &copy; 2025 SoloSuite. All rights reserved. Founded by Malaika Jahangir.
           </p>
         </div>
       </div>
