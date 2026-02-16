@@ -117,11 +117,11 @@ function HomePage() {
                                     <ArrowRight className="w-5 h-5" />
                                 </button>
                             </a>
-                            <a href="/#projects">
+                            <Link to="/contact">
                                 <button className="border border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-medium hover:border-gray-400 transition-colors">
                                     Reach Out
                                 </button>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
