@@ -81,7 +81,7 @@ function HomePage() {
                                 <Link
                                     to="/contact"
                                     className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
-                                >#projects
+                                >
                                     Contact
                                 </Link>
                                 <HashLink
