@@ -102,9 +102,9 @@ function HomePage() {
     <div className="max-w-6xl mx-auto">
         <div className="text-center">
             <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-10 leading-[1.15]">
-                We Design and Build Strategic Digital Infrastructure
+                We Build Strategic Digital Infrastructure
                 <span className="block bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mt-2">
-                    That Powers Serious Brands to Scale With Precision
+                    That Powers Serious Brands to Scale
                 </span>
             </h1>
 
