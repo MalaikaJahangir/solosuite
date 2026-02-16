@@ -102,13 +102,13 @@ function HomePage() {
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center">
                         <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6">
-                            Empowering Businesses with
+                            We Design and Build Strategic Digital Infrastructure
                             <span className="block bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                                Digital Solutions That Scale
+                                That Powers Serious Brands to Scale With Precision
                             </span>
                         </h1>
                         <p className="text-xl sm:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-                            From web development to branding, SoloSuite is your all-in-one digital partner for growth and innovation.
+                            From positioning to execution, SoloSuite HQ builds the structured digital foundations ambitious brands rely on to grow with clarity and control.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                             <a href="/#about">
