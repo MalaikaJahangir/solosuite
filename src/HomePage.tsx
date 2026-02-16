@@ -81,7 +81,7 @@ function HomePage() {
                                 <Link
                                     to="/contact"
                                     className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
-                                >
+                                >#projects
                                     Contact
                                 </Link>
                                 <HashLink
@@ -117,7 +117,7 @@ function HomePage() {
                                     <ArrowRight className="w-5 h-5" />
                                 </button>
                             </a>
-                            <a href="/contact">
+                            <a href="/#projects">
                                 <button className="border border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-medium hover:border-gray-400 transition-colors">
                                     Reach Out
                                 </button>
