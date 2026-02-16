@@ -101,7 +101,7 @@ function HomePage() {
             <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center">
-                        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6">
+                        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                             We Design and Build Strategic Digital Infrastructure
                             <span className="block bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
                                 That Powers Serious Brands to Scale With Precision
