@@ -98,34 +98,37 @@ function HomePage() {
             </nav>
 
             {/* Hero Section */}
-            <section className="pt-32 pb-32 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-7xl mx-auto">
-                    <div className="text-center">
-                        <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                            We Design and Build Strategic Digital Infrastructure
-                            <span className="block bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                                That Powers Serious Brands to Scale With Precision
-                            </span>
-                        </h1>
-                        <p className="text-xl sm:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-                            From positioning to execution, SoloSuite HQ builds the structured digital foundations ambitious brands rely on to grow with clarity and control.
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                            <a href="/#about">
-                                <button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2">
-                                    Get Started
-                                    <ArrowRight className="w-5 h-5" />
-                                </button>
-                            </a>
-                            <Link to="/contact">
-                                <button className="border border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-medium hover:border-gray-400 transition-colors">
-                                    Reach Out
-                                </button>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            </section>
+           <section className="pt-36 pb-32 px-6 sm:px-8 lg:px-8">
+    <div className="max-w-6xl mx-auto">
+        <div className="text-center">
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-10 leading-[1.15]">
+                We Design and Build Strategic Digital Infrastructure
+                <span className="block bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mt-2">
+                    That Powers Serious Brands to Scale With Precision
+                </span>
+            </h1>
+
+            <p className="text-xl sm:text-2xl text-gray-600 mb-16 max-w-2xl mx-auto leading-relaxed">
+                From positioning to execution, SoloSuite HQ builds the structured digital foundations ambitious brands rely on to grow with clarity and control.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <a href="/#about">
+                    <button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2">
+                        Get Started
+                        <ArrowRight className="w-5 h-5" />
+                    </button>
+                </a>
+
+                <Link to="/contact">
+                    <button className="border border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-medium hover:border-gray-400 transition-colors">
+                        Reach Out
+                    </button>
+                </Link>
+            </div>
+        </div>
+    </div>
+</section>
 
             {/* About Section */}
             <section id="about" className="py-20 bg-gray-50">
