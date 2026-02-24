@@ -1,4 +1,4 @@
-import { ArrowRight, Code2, Palette, Search, PenTool, TrendingUp, ExternalLink, Star, Mail } from 'lucide-react';
+import { ArrowRight, Code2, LayoutDashboard, Target, Megaphone, PenTool, Cpu, Database, ExternalLink, Star } from 'lucide-react';
 import malaikaImg from './assets/malaika.png'; // Adjust the path as necessary
 import themeBg from './assets/themebg.png';
 import { Link, useNavigate } from 'react-router-dom';
@@ -199,46 +199,46 @@ function HomePage() {
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
                             {
-                                icon: <Code2 className="w-8 h-8" />,
-                                title: "Web Development",
-                                description: "Custom websites & applications built with modern technologies for optimal performance and user experience.",
+                                icon: <LayoutDashboard className="w-8 h-8" />,
+                                title: "Digital Infrastructure",
+                                description: "Conversion-focused websites and scalable digital foundations engineered for clarity and measurable growth.",
                                 gradient: "from-purple-500 to-purple-600",
-                                link: "/services/web-development"
+                                link: "/services/digital-infrastructure"
                             },
                             {
-                                icon: <Palette className="w-8 h-8" />,
-                                title: "Web Designing",
-                                description: "Stunning UI/UX designs that captivate users and drive conversions with pixel-perfect frontend implementations.",
+                                icon: <Target className="w-8 h-8" />,
+                                title: "Strategic Brand Positioning",
+                                description: "Market-aligned positioning and messaging frameworks defining your authority.",
                                 gradient: "from-blue-500 to-blue-600",
-                                link: "/services/web-designing"
+                                link: "/services/strategic-brand-positioning"
                             },
                             {
-                                icon: <Search className="w-8 h-8" />,
-                                title: "SEO Services",
-                                description: "Boost your search rankings and online visibility with data-driven SEO strategies that deliver results.",
+                                icon: <Megaphone className="w-8 h-8" />,
+                                title: "Authority & Social Systems",
+                                description: "Platform-agnostic authority systems designed to build trust, grow influence, and generate structured inbound demand.",
                                 gradient: "from-green-500 to-green-600",
-                                link: "/services/seo"
+                                link: "/services/authority-social-systems"
                             },
                             {
                                 icon: <PenTool className="w-8 h-8" />,
-                                title: "Copywriting",
-                                description: "Compelling content that converts visitors into customers with persuasive and engaging copy.",
+                                title: "Content & Conversion Strategy",
+                                description: "Structured content ecosystems that guide audiences from attention to action with precision and intent.",
                                 gradient: "from-orange-500 to-orange-600",
-                                link: "/services/copywriting"
+                                link: "/services/content-conversion-strategy"
                             },
                             {
-                                icon: <TrendingUp className="w-8 h-8" />,
-                                title: "Social Media Strategy",
-                                description: "Comprehensive social media strategies for growth and brand presence across all major platforms.",
+                                icon: <Cpu className="w-8 h-8" />,
+                                title: "AI-Driven Growth Systems",
+                                description: "Intelligent workflows and automation frameworks that streamline operations and unlock scalable performance.",
                                 gradient: "from-pink-500 to-pink-600",
-                                link: "/services/social-media"
+                                link: "/services/ai-driven-growth-systems"
                             },
                             {
-                                icon: <Mail className="w-8 h-8" />,
-                                title: "Digital Consulting",
-                                description: "Expert guidance on digital transformation and technology solutions tailored to your business needs.",
+                                icon: <Database className="w-8 h-8" />,
+                                title: "Backend & Sales Systems",
+                                description: "CRM architecture and sales enablement systems built to organize leads, optimize pipelines, and support long-term scale.",
                                 gradient: "from-indigo-500 to-indigo-600",
-                                link: "/services/digital-consulting"
+                                link: "/services/backend-sales-systems"
                             }
                         ].map((service, index) => (
                             <div
@@ -265,7 +265,7 @@ function HomePage() {
 
                 </div>
             </section>
-
+            
             {/* Projects Section */}
             <section id="projects" className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
