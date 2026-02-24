@@ -46,11 +46,11 @@ const WebDevelopment = () => {
                     <div className="text-center mb-16">
                         <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 mb-6">
                             <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                                Web Development
+                                Digital Infrastructure
                             </span>
                         </h1>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                            Custom websites and applications built with cutting-edge technologies for optimal performance and user experience.
+                           Conversion-focused websites and scalable digital foundations engineered for clarity, credibility, and measurable growth.
                         </p>
                     </div>
                 </div>
@@ -63,34 +63,34 @@ const WebDevelopment = () => {
                         {/* Left Side - Description */}
                         <div>
                             <h2 className="text-3xl font-bold text-gray-900 mb-8">
-                                Why You Need Professional Web Development
+                                Why You Need Strategic Digital Infrastructure
                             </h2>
 
                             <div className="space-y-6 mb-8">
                                 <div className="bg-white p-6 rounded-2xl shadow-sm">
-                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">🚀 Performance That Converts</h3>
-                                    <p className="text-gray-600">Fast-loading, optimized websites that keep visitors engaged and drive conversions. Every millisecond matters in today's digital landscape.</p>
+                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">🚀 Conversion-Focused Architecture</h3>
+                                    <p className="text-gray-600">High-performance websites structured to guide visitors toward clear actions and measurable outcomes.</p>
                                 </div>
 
                                 <div className="bg-white p-6 rounded-2xl shadow-sm">
-                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">📱 Mobile-First Approach</h3>
-                                    <p className="text-gray-600">Responsive designs that work flawlessly across all devices. With 60% of traffic coming from mobile, we ensure your site looks perfect everywhere.</p>
+                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">📱 Responsive & Scalable Design</h3>
+                                    <p className="text-gray-600">Optimized experiences across all devices, built to grow with your business and evolving demands.</p>
                                 </div>
 
                                 <div className="bg-white p-6 rounded-2xl shadow-sm">
-                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">🔧 Modern Technologies</h3>
-                                    <p className="text-gray-600">Built with React, Next.js, TypeScript, and other cutting-edge technologies for scalability, maintainability, and future-proofing.</p>
+                                    <h3 className="text-xl font-semibold text-gray-900 mb-3">⚙️ Performance & Reliability</h3>
+                                    <p className="text-gray-600">Engineered for speed, security, and long-term maintainability using modern development standards.</p>
                                 </div>
 
                                 <div className="bg-white p-6 rounded-2xl shadow-sm">
                                     <h3 className="text-xl font-semibold text-gray-900 mb-3">⚡ Why Choose SoloSuite</h3>
-                                    <p className="text-gray-600">As a self-taught developer with a passion for innovation, Malaika brings fresh perspectives and cutting-edge solutions to every project. We don't just build websites - we create digital experiences that drive business growth.</p>
+                                    <p className="text-gray-600">We don’t just build websites — we engineer digital foundations designed for authority, clarity, and sustainable growth.</p>
                                 </div>
                             </div>
 
                             {/* Projects Carousel */}
                             <div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-6">Our Web Development Projects</h3>
+                                <h3 className="text-2xl font-bold text-gray-900 mb-6">Real-World Projects</h3>
                                 <ProjectCarousel projects={projects} />
                             </div>
                         </div>
@@ -103,7 +103,7 @@ const WebDevelopment = () => {
                             <div className="mt-8 bg-gradient-to-br from-purple-50 to-blue-50 p-8 rounded-3xl">
                                 <h3 className="text-xl font-bold text-gray-900 mb-4">Need Complete Digital Solutions?</h3>
                                 <p className="text-gray-600 mb-6">
-                                    Get web development, design, SEO, copywriting, and social media strategy - all in one comprehensive package.
+                                   Build a scalable online foundation aligned with long-term business growth.
                                 </p>
                                 <Link
                                     to="/contact"
