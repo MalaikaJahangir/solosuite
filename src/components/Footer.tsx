@@ -44,33 +44,33 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-gray-400 text-sm md:text-base">
               <li>
-                <Link to="/services/web-development" className="hover:text-white transition-colors">
-                  Web Development
+                <Link to="/services/digital-infrastructure" className="hover:text-white transition-colors">
+                  Digital Infrastructure
                 </Link>
               </li>
               <li>
-                <Link to="/services/web-designing" className="hover:text-white transition-colors">
-                  Web Design
+                <Link to="/services/strategic-brand-positioning" className="hover:text-white transition-colors">
+                  Strategic Brand Positioning
                 </Link>
               </li>
               <li>
-                <Link to="/services/seo" className="hover:text-white transition-colors">
-                  SEO Services
+                <Link to="/services/authority-social-systems" className="hover:text-white transition-colors">
+                  Authority & Social Systems
                 </Link>
               </li>
               <li>
-                <Link to="/services/copywriting" className="hover:text-white transition-colors">
-                  Copywriting
+                <Link to="/services/content-conversion-strategy" className="hover:text-white transition-colors">
+                  Content & Conversion Strategy
                 </Link>
               </li>
               <li>
-                <Link to="/services/social-media" className="hover:text-white transition-colors">
-                  Social Media
+                <Link to="/services/ai-driven-growth-systems" className="hover:text-white transition-colors">
+                  AI-Driven Growth Systems
                 </Link>
               </li>
               <li>
-                <Link to="/services/digital-consulting" className="hover:text-white transition-colors">
-                  Digital Consulting
+                <Link to="/services/backend-sales-systems" className="hover:text-white transition-colors">
+                  Backend & Sales Systems
                 </Link>
               </li>
             </ul>
@@ -80,7 +80,7 @@ const Footer = () => {
             <div className="space-y-3 text-gray-400 text-sm md:text-base">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5" />
-                <span className="break-words">solosuitehq@gmail.com</span>
+                <span className="break-words">malaika@solosuitehq.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5" />
