@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import ProjectCarousel from '../components/ProjectCarousel';
 import ContactForm from '../components/ContactForm';
 
 const Copywriting = () => {
@@ -12,29 +11,7 @@ const Copywriting = () => {
             window.scrollTo({ top: 0, left: 0, behavior: "auto" });
         }, []);
 
-  const projects = [
-    {
-      title: "SaaS Email Campaign",
-      description: "High-converting email sequence that increased trial-to-paid conversions by 180% for a B2B SaaS company.",
-      image: "/api/placeholder/400/300",
-      category: "Email Marketing",
-      metrics: "180% Conversion Increase"
-    },
-    {
-      title: "Landing Page Copy",
-      description: "Persuasive landing page copy that transformed a struggling product launch into a bestseller.",
-      image: "/api/placeholder/400/300",
-      category: "Sales Copy",
-      metrics: "65% Conversion Rate"
-    },
-    {
-      title: "Brand Messaging Strategy",
-      description: "Complete brand voice and messaging framework that unified communications across all channels.",
-      image: "/api/placeholder/400/300",
-      category: "Brand Copy",
-      metrics: "Brand Consistency +400%"
-    }
-  ];
+
 
   return (
     <div className="min-h-screen bg-white">
@@ -46,11 +23,11 @@ const Copywriting = () => {
           <div className="text-center mb-16">
             <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 mb-6">
               <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                Copywriting
+                Content & Conversion Strategy
               </span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Compelling content that converts visitors into customers with persuasive and engaging copy that drives action.
+              Structured content ecosystems that guide audiences from attention to action with precision and intent.
             </p>
           </div>
         </div>
@@ -63,35 +40,29 @@ const Copywriting = () => {
             {/* Left Side - Description */}
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-8">
-                Why Professional Copywriting Transforms Businesses
+                Why Structured Content Converts
               </h2>
               
               <div className="space-y-6 mb-8">
                 <div className="bg-white p-6 rounded-2xl shadow-sm">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">🎯 Psychology-Driven Persuasion</h3>
-                  <p className="text-gray-600">Every word is strategically chosen using proven psychological triggers that motivate readers to take action, increasing conversions by up to 300%.</p>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">📝 Conversion-Focused Messaging</h3>
+                  <p className="text-gray-600">Content crafted with intent, guiding audiences from interest to action.</p>
                 </div>
                 
                 <div className="bg-white p-6 rounded-2xl shadow-sm">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">💬 Brand Voice That Resonates</h3>
-                  <p className="text-gray-600">Develop a unique brand voice that connects emotionally with your audience, building trust and loyalty that translates to long-term customer relationships.</p>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">🔄 Funnel Integration</h3>
+                  <p className="text-gray-600">Seamless alignment between content, lead capture, and offers.</p>
                 </div>
                 
                 <div className="bg-white p-6 rounded-2xl shadow-sm">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">📊 Data-Backed Content Strategy</h3>
-                  <p className="text-gray-600">Every piece of copy is crafted based on audience research, competitor analysis, and conversion optimization principles for maximum impact.</p>
-                </div>
-                
-                <div className="bg-white p-6 rounded-2xl shadow-sm">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">✨ SoloSuite's Copywriting Edge</h3>
-                  <p className="text-gray-600">Malaika combines creative storytelling with conversion psychology, creating copy that not only engages but compels action. From email sequences to landing pages, every word works toward your business goals.</p>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">📊 Performance-Driven Optimization</h3>
+                  <p className="text-gray-600">Refinement based on engagement and measurable outcomes.</p>
                 </div>
               </div>
 
-              {/* Projects Carousel */}
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Copywriting Success Stories</h3>
-                <ProjectCarousel projects={projects} />
+              <div className="bg-white p-6 rounded-2xl shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">Why Choose SoloSuite</h3>
+                <p className="text-gray-600">We create content systems that support business objectives — not just visibility metrics.</p>
               </div>
             </div>
 
@@ -101,15 +72,15 @@ const Copywriting = () => {
               
               {/* CTA for All Services */}
               <div className="mt-8 bg-gradient-to-br from-purple-50 to-blue-50 p-8 rounded-3xl">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">Need Complete Digital Solutions?</h3>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">Need a Clear Content Framework?</h3>
                 <p className="text-gray-600 mb-6">
-                  Get web development, design, SEO, copywriting, and social media strategy - all in one comprehensive package.
+                  Transform attention into measurable results.
                 </p>
                 <Link 
                   to="/contact"
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
                 >
-                  Get All Services
+                  Get Started
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </div>
