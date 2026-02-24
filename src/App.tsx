@@ -48,12 +48,12 @@ function App() {
         <Routes location={location}>
           <Route path="/" element={<HomePage />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/services/web-development" element={<WebDevelopment />} />
-          <Route path="/services/web-designing" element={<WebDesigning />} />
-          <Route path="/services/seo" element={<SEO />} />
-          <Route path="/services/copywriting" element={<Copywriting />} />
-          <Route path="/services/social-media" element={<SocialMedia />} />
-          <Route path="/services/digital-consulting" element={<DigitalConsulting />} />
+          <Route path="/services/digital-infrastructure" element={<WebDevelopment />} />
+          <Route path="/services/strategic-brand-positioning" element={<WebDesigning />} />
+          <Route path="/services/authority-social-systems" element={<SEO />} />
+          <Route path="/services/content-conversion-strategy" element={<Copywriting />} />
+          <Route path="/services/ai-driven-growth-systems" element={<SocialMedia />} />
+          <Route path="/services/backend-sales-systems" element={<DigitalConsulting />} />
           <Route path="/projects/caption-crafter" element={<CaptionCrafter />} />
           <Route path="/projects/instagram-strategy" element={<InstagramStrategy />} />
           <Route path="/thank-you" element={<ThankYou />} />
