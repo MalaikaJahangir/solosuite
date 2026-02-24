@@ -121,12 +121,12 @@ const Contact = () => {
                     className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all duration-300"
                   >
                     <option value="">Select a service...</option>
-                    <option value="web-development">Web Development</option>
-                    <option value="web-designing">Web Design</option>
-                    <option value="seo-services">SEO Services</option>
-                    <option value="copywriting">Copywriting</option>
-                    <option value="social-media">Social Media Strategy</option>
-                    <option value="digital-consulting">Digital Consulting</option>
+                    <option value="digital-infrastructure">Digital Infrastructure</option>
+                    <option value="strategic-brand-positioning">Strategic Brand Positioning</option>
+                    <option value="authority-social-systems">Authority & Social Systems</option>
+                    <option value="content-conversion-strategy">Content & Conversion Strategy</option>
+                    <option value="ai-driven-growth-systems">AI-Driven Growth Systems</option>
+                    <option value="backend-sales-systems">Backend & Sales Systems</option>
                     <option value="complete-package">Complete Digital Package</option>
                   </select>
                 </div>
@@ -270,28 +270,28 @@ const Contact = () => {
           <div className="max-w-3xl mx-auto space-y-4">
             {[
               {
-                question: "How long does a typical project take?",
-                answer: "Project timelines vary based on complexity. Simple websites take 1-2 weeks, while complex applications can take 4-8 weeks. We'll provide a detailed timeline during consultation."
+                question: "How long will my project take?",
+                answer: "Timelines depend on scope. A basic site can be done in 1–2 weeks; complex apps usually require 4–8. You'll get a clear schedule during our kickoff call."
               },
               {
-                question: "Do you offer ongoing support?",
-                answer: "Yes! We provide ongoing maintenance, updates, and support for all our projects. We're here to help your business grow long-term."
+                question: "Can you support me after launch?",
+                answer: "Yes. We offer ongoing maintenance, updates, and strategy work so your digital product continues performing and evolving."
               },
               {
-                question: "What's included in your packages?",
-                answer: "Our packages are customized based on your needs. We can provide individual services or complete digital solutions including design, development, SEO, and marketing."
+                question: "What do your service packages include?",
+                answer: "Packages are flexible. Choose individual services or bundle design, development, SEO, content, and automation into a complete digital system tailored to your goals."
               },
               {
-                question: "How do you ensure project success?",
-                answer: "We use a proven process: thorough planning, regular communication, iterative development, and comprehensive testing to ensure every project exceeds expectations."
+                question: "How do you keep projects on track?",
+                answer: "We follow a disciplined workflow: plan thoroughly, communicate often, build iteratively, and test everything. This process keeps us aligned and delivers results."
               },
               {
-                question: "What makes SoloSuite different from other agencies?",
-                answer: "As a young entrepreneur and self-taught developer, Malaika brings fresh perspectives and cutting-edge solutions. You get direct access to the founder, personalized attention, and innovative approaches that larger agencies can't offer."
+                question: "Why work with SoloSuite?",
+                answer: "You get founder-level attention from a hands-on entrepreneur/developer. Our small‑team agility and data‑driven creativity beat cookie‑cutter agencies every time."
               },
               {
-                question: "Do you work with international clients?",
-                answer: "Absolutely! We work with clients globally and are experienced in different time zones, currencies, and business requirements. Our remote-first approach ensures seamless collaboration regardless of location."
+                question: "Do you take on international clients?",
+                answer: "Definitely. We partner with businesses worldwide using a remote‑first setup that handles time zones, currencies and culture smoothly."
               }
             ].map((faq, index) => (
               <div key={index} className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
