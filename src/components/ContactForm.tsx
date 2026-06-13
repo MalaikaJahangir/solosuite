@@ -27,32 +27,32 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-white p-8 rounded-3xl shadow-xl">
-      <h3 className="text-2xl font-bold text-gray-900 mb-6">
+    <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+      <h3 className="text-2xl font-bold text-slate-900 mb-6 tracking-tight">
         Ready to Get Started?
       </h3>
       <form name="contact" onSubmit={handleSubmit}>
         <div className="grid md:grid-cols-2 gap-6 mb-6">
           <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-2">
+            <label className="block text-sm font-semibold text-slate-700 mb-2">
               Name
             </label>
             <input
               type="text"
               name="name"
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all duration-300"
+              className="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-slate-900 focus:border-transparent outline-none transition-all duration-300 text-slate-900 placeholder:text-gray-400 bg-white"
               placeholder="Your full name"
               required
             />
           </div>
           <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-2">
+            <label className="block text-sm font-semibold text-slate-700 mb-2">
               Email
             </label>
             <input
               type="email"
               name="email"
-              className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all duration-300"
+              className="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-slate-900 focus:border-transparent outline-none transition-all duration-300 text-slate-900 placeholder:text-gray-400 bg-white"
               placeholder="your@email.com"
               required
             />
@@ -60,13 +60,13 @@ const ContactForm = () => {
         </div>
 
         <div className="mb-6">
-          <label className="block text-sm font-semibold text-gray-700 mb-2">
+          <label className="block text-sm font-semibold text-slate-700 mb-2">
             Message
           </label>
           <textarea
             name="message"
             rows={5}
-            className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all duration-300 resize-none"
+            className="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-slate-900 focus:border-transparent outline-none transition-all duration-300 resize-none text-slate-900 placeholder:text-gray-400 bg-white"
             placeholder="Tell us about your project..."
             required
           ></textarea>
@@ -75,8 +75,9 @@ const ContactForm = () => {
         <button
           type="submit"
           disabled={isSubmitting}
-          className={`w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-4 rounded-xl text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 ${isSubmitting ? "opacity-70 cursor-not-allowed" : ""
-            }`}
+          className={`w-full bg-slate-900 text-white py-4 rounded-xl text-lg font-semibold hover:bg-slate-800 transition-all duration-300 transform hover:-translate-y-0.5 shadow-sm ${
+            isSubmitting ? "opacity-70 cursor-not-allowed transform-none" : ""
+          }`}
         >
           {isSubmitting ? "Submitting..." : "Let's Build Together"}
         </button>
