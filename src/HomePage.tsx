@@ -49,7 +49,7 @@ function HomePage() {
                                 <HashLink
                                     smooth
                                     to="/"
-                                    className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent"
+                                    className="text-2xl font-bold text-slate-900 tracking-tight"
                                 >
                                     SoloSuite
                                 </HashLink>
@@ -60,34 +60,34 @@ function HomePage() {
                                 <HashLink
                                     smooth
                                     to="/#about"
-                                    className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
+                                    className="text-gray-600 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
                                 >
                                     About
                                 </HashLink>
                                 <HashLink
                                     smooth
                                     to="/#services"
-                                    className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
+                                    className="text-gray-600 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
                                 >
                                     Services
                                 </HashLink>
                                 <HashLink
                                     smooth
                                     to="/#projects"
-                                    className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
+                                    className="text-gray-600 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
                                 >
                                     Projects
                                 </HashLink>
                                 <Link
                                     to="/contact"
-                                    className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
+                                    className="text-gray-600 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
                                 >
                                     Contact
                                 </Link>
                                 <HashLink
                                     smooth
                                     to="/#contact"
-                                    className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
+                                    className="bg-slate-900 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-slate-800 transition-colors shadow-sm"
                                 >
                                     Get Started
                                 </HashLink>
@@ -98,12 +98,12 @@ function HomePage() {
             </nav>
 
             {/* Hero Section */}
-           <section className="pt-36 pb-32 px-6 sm:px-8 lg:px-8">
+            <section className="pt-36 pb-32 px-6 sm:px-8 lg:px-8">
     <div className="max-w-6xl mx-auto">
         <div className="text-center">
-            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-10 leading-[1.15]">
+            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-10 leading-[1.15]">
                 We Build Strategic Digital Infrastructure
-                <span className="block bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mt-2">
+                <span className="block text-slate-500 mt-2">
                     That Powers Serious Brands to Scale
                 </span>
             </h1>
@@ -114,14 +114,14 @@ function HomePage() {
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                 <a href="/#about">
-                    <button className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2">
+                    <button className="bg-slate-900 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-slate-800 transition-colors shadow-sm flex items-center gap-2">
                         Get Started
                         <ArrowRight className="w-5 h-5" />
                     </button>
                 </a>
 
                 <Link to="/contact">
-                    <button className="border border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-medium hover:border-gray-400 transition-colors">
+                    <button className="border border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-medium hover:border-slate-400 hover:text-slate-900 transition-colors">
                         Reach Out
                     </button>
                 </Link>
@@ -135,36 +135,36 @@ function HomePage() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                                Meet <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Malaika Jahangir</span>
+                            <h2 className="text-4xl font-bold text-slate-900 mb-6">
+                                Meet <span className="text-slate-500">Malaika Jahangir</span>
                             </h2>
                             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                                As the founder of SoloSuite, Malaika Jahangir is an entrepreneur and  developer driven by innovation and the desire to help businesses thrive in the digital world.
+                                As the founder of SoloSuite, Malaika Jahangir is an entrepreneur and developer driven by innovation and the desire to help businesses thrive in the digital world.
                             </p>
                             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                                 With a passion for creating digital solutions that make a real impact & combining technical expertise with creative vision to deliver exceptional results for startups, entrepreneurs, and small businesses.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4">
                                 <div className="bg-white p-6 rounded-2xl shadow-sm">
-                                    <h3 className="font-semibold text-gray-900 mb-2">Tech Entrepreneur</h3>
+                                    <h3 className="font-semibold text-slate-900 mb-2">Tech Entrepreneur</h3>
                                     <p className="text-gray-600">Building scalable digital products with a business-first mindset</p>
                                 </div>
                                 <div className="bg-white p-6 rounded-2xl shadow-sm">
-                                    <h3 className="font-semibold text-gray-900 mb-2">Results Focused</h3>
+                                    <h3 className="font-semibold text-slate-900 mb-2">Results Focused</h3>
                                     <p className="text-gray-600">Turning ideas into impactful solutions that drive growth</p>
                                 </div>
                             </div>
                         </div>
                         <div className="relative">
-                            <div className="bg-gradient-to-br from-purple-100 to-blue-100 rounded-3xl p-8 h-96 flex flex-col items-center justify-center relative overflow-hidden">
+                            <div className="bg-slate-100/80 rounded-3xl p-8 h-96 flex flex-col items-center justify-center relative overflow-hidden">
                                 <img
                                     src={themeBg}
                                     alt="Theme background"
-                                    className="absolute inset-0 w-full h-full object-cover opacity-40"
+                                    className="absolute inset-0 w-full h-full object-cover opacity-20"
                                     style={{ zIndex: 1 }}
                                 />
                                 {/* Profile image circle */}
-                                <div className="relative z-10 w-40 h-40 sm:w-48 sm:h-48 bg-gradient-to-br from-purple-600 to-blue-600 rounded-full flex items-center justify-center overflow-hidden mb-4 shadow-lg">
+                                <div className="relative z-10 w-40 h-40 sm:w-48 sm:h-48 bg-slate-900 rounded-full flex items-center justify-center overflow-hidden mb-4 shadow-md">
                                     <img
                                         src={malaikaImg}
                                         alt="Malaika Jahangir"
@@ -173,7 +173,7 @@ function HomePage() {
                                 </div>
                                 {/* Text beneath profile pic */}
                                 <div className="relative z-10 text-center">
-                                    <h3 className="text-xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent mb-1">
+                                    <h3 className="text-xl font-bold text-slate-900 mb-1">
                                         Malaika Jahangir
                                     </h3>
                                     <p className="text-gray-700 text-sm font-medium">Founder &amp; Lead Developer</p>
@@ -188,8 +188,8 @@ function HomePage() {
             <section id="services" className="py-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                            Our <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Services</span>
+                        <h2 className="text-4xl font-bold text-slate-900 mb-4">
+                            Our <span className="text-slate-500">Services</span>
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                             Comprehensive digital solutions tailored to help your business grow and succeed online.
@@ -202,42 +202,42 @@ function HomePage() {
                                 icon: <LayoutDashboard className="w-8 h-8" />,
                                 title: "Digital Infrastructure",
                                 description: "Conversion-focused websites and scalable digital foundations engineered for clarity and measurable growth.",
-                                gradient: "from-purple-500 to-purple-600",
+                                gradient: "from-slate-700 to-slate-800",
                                 link: "/services/digital-infrastructure"
                             },
                             {
                                 icon: <Target className="w-8 h-8" />,
                                 title: "Strategic Brand Positioning",
                                 description: "Market-aligned positioning and messaging frameworks defining your authority.",
-                                gradient: "from-blue-500 to-blue-600",
+                                gradient: "from-slate-700 to-slate-800",
                                 link: "/services/strategic-brand-positioning"
                             },
                             {
                                 icon: <Megaphone className="w-8 h-8" />,
                                 title: "Authority & Social Systems",
                                 description: "Platform-agnostic authority systems designed to build trust, grow influence, and generate structured inbound demand.",
-                                gradient: "from-green-500 to-green-600",
+                                gradient: "from-slate-700 to-slate-800",
                                 link: "/services/authority-social-systems"
                             },
                             {
                                 icon: <PenTool className="w-8 h-8" />,
                                 title: "Content & Conversion Strategy",
                                 description: "Structured content ecosystems that guide audiences from attention to action with precision and intent.",
-                                gradient: "from-orange-500 to-orange-600",
+                                gradient: "from-slate-700 to-slate-800",
                                 link: "/services/content-conversion-strategy"
                             },
                             {
                                 icon: <Cpu className="w-8 h-8" />,
                                 title: "AI-Driven Growth Systems",
                                 description: "Intelligent workflows and automation frameworks that streamline operations and unlock scalable performance.",
-                                gradient: "from-pink-500 to-pink-600",
+                                gradient: "from-slate-700 to-slate-800",
                                 link: "/services/ai-driven-growth-systems"
                             },
                             {
                                 icon: <Database className="w-8 h-8" />,
                                 title: "Backend & Sales Systems",
                                 description: "CRM architecture and sales enablement systems built to organize leads, optimize pipelines, and support long-term scale.",
-                                gradient: "from-indigo-500 to-indigo-600",
+                                gradient: "from-slate-700 to-slate-800",
                                 link: "/services/backend-sales-systems"
                             }
                         ].map((service, index) => (
@@ -250,11 +250,11 @@ function HomePage() {
                                 >
                                     {service.icon}
                                 </div>
-                                <h3 className="text-xl font-bold text-gray-900 mb-4">{service.title}</h3>
+                                <h3 className="text-xl font-bold text-slate-900 mb-4">{service.title}</h3>
                                 <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
                                 <Link
                                     to={service.link}
-                                    className="text-purple-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all duration-300"
+                                    className="text-slate-900 font-semibold flex items-center gap-2 hover:gap-3 transition-all duration-300"
                                 >
                                     Learn More
                                     <ExternalLink className="w-4 h-4" />
@@ -270,8 +270,8 @@ function HomePage() {
             <section id="projects" className="py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                            Featured <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Projects</span>
+                        <h2 className="text-4xl font-bold text-slate-900 mb-4">
+                            Featured <span className="text-slate-500">Projects</span>
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                             Showcasing our successful digital solutions and the impact they've made for our clients.
@@ -303,27 +303,27 @@ function HomePage() {
                             }
                         ].map((project, index) => (
                             <div key={index} className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                                <div className="h-48 bg-gradient-to-br from-purple-100 to-blue-100 flex items-center justify-center">
+                                <div className="h-48 bg-slate-100 flex items-center justify-center">
                                     <div className="text-center">
-                                        <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-lg mb-4 mx-auto">
-                                            <Code2 className="w-8 h-8 text-purple-600" />
+                                        <div className="w-20 h-20 bg-white rounded-2xl flex items-center justify-center shadow-md mb-4 mx-auto">
+                                            <Code2 className="w-8 h-8 text-slate-900" />
                                         </div>
-                                        <span className="text-sm font-medium text-purple-600 bg-purple-100 px-3 py-1 rounded-full">
+                                        <span className="text-sm font-medium text-slate-800 bg-slate-200/60 px-3 py-1 rounded-full">
                                             {project.category}
                                         </span>
                                     </div>
                                 </div>
                                 <div className="p-8">
-                                    <h3 className="text-xl font-bold text-gray-900 mb-3">{project.title}</h3>
+                                    <h3 className="text-xl font-bold text-slate-900 mb-3">{project.title}</h3>
                                     <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
                                     <div className="flex justify-between items-center">
-                                        <span className="text-sm font-semibold text-green-600">{project.metrics}</span>
+                                        <span className="text-sm font-semibold text-slate-700">{project.metrics}</span>
                                         {project.link?.startsWith('http') ? (
                                             <a
                                                 href={project.link}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="text-purple-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all duration-300"
+                                                className="text-slate-900 font-semibold flex items-center gap-2 hover:gap-3 transition-all duration-300"
                                             >
                                                 View Project
                                                 <ArrowRight className="w-4 h-4" />
@@ -331,7 +331,7 @@ function HomePage() {
                                         ) : (
                                             <Link
                                                 to={project.link}
-                                                className="text-purple-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all duration-300"
+                                                className="text-slate-900 font-semibold flex items-center gap-2 hover:gap-3 transition-all duration-300"
                                             >
                                                 View Project
                                                 <ArrowRight className="w-4 h-4" />
@@ -349,8 +349,8 @@ function HomePage() {
             <section className="py-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                            What Our <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">Clients Say</span>
+                        <h2 className="text-4xl font-bold text-slate-900 mb-4">
+                            What Our <span className="text-slate-500">Clients Say</span>
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                             Don't just take our word for it - hear from the businesses we've helped transform digitally.
@@ -381,14 +381,14 @@ function HomePage() {
                             <div key={index} className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
                                 <div className="flex mb-4">
                                     {[...Array(testimonial.rating)].map((_, i) => (
-                                        <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                                        <Star key={i} className="w-5 h-5 text-amber-500 fill-current" />
                                     ))}
                                 </div>
                                 <blockquote className="text-gray-700 mb-6 leading-relaxed">
                                     "{testimonial.quote}"
                                 </blockquote>
                                 <div>
-                                    <div className="font-semibold text-gray-900">{testimonial.author}</div>
+                                    <div className="font-semibold text-slate-900">{testimonial.author}</div>
                                     <div className="text-gray-600 text-sm">{testimonial.role}</div>
                                 </div>
                             </div>
@@ -399,13 +399,12 @@ function HomePage() {
 
 
             {/* Contact Section */}
-            {/* Contact Section */}
-            <section id="contact" className="py-20 bg-gradient-to-br from-purple-50 to-blue-50">
+            <section id="contact" className="py-20 bg-slate-50 border-t border-slate-100">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
-                        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-4xl font-bold text-slate-900 mb-4">
                             Ready to{" "}
-                            <span className="bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+                            <span className="text-slate-500">
                                 Get Started?
                             </span>
                         </h2>
@@ -424,19 +423,19 @@ function HomePage() {
                                     <input
                                         type="text"
                                         name="name"
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all duration-300"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-slate-900 focus:border-transparent outline-none transition-all duration-300"
                                         placeholder="Your full name"
                                         required
-                                    />
+                                        />
                                 </div>
                                 <div>
                                     <label className="block text-sm font-semibold text-gray-700 mb-2">
                                         Email
                                     </label>
                                     <input
-                                        type="email"
+                                        type="author"
                                         name="email"
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all duration-300"
+                                        className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-slate-900 focus:border-transparent outline-none transition-all duration-300"
                                         placeholder="your@email.com"
                                         required
                                     />
@@ -450,7 +449,7 @@ function HomePage() {
                                 <textarea
                                     name="message"
                                     rows={8}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all duration-300 resize-none"
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-slate-900 focus:border-transparent outline-none transition-all duration-300 resize-none"
                                     placeholder="Tell us about your project..."
                                     required
                                 ></textarea>
@@ -459,7 +458,7 @@ function HomePage() {
                             <button
                                 type="submit"
                                 disabled={isSubmitting}
-                                className={`w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-4 rounded-xl text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 ${isSubmitting ? "opacity-70 cursor-not-allowed" : ""
+                                className={`w-full bg-slate-900 text-white py-4 rounded-xl text-lg font-semibold hover:bg-slate-800 transition-colors shadow-md ${isSubmitting ? "opacity-70 cursor-not-allowed" : ""
                                     }`}
                             >
                                 {isSubmitting ? "Submitting..." : "Let's Build Together"}
