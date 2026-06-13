@@ -52,18 +52,20 @@ const Contact = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-700">
+      <section className="pt-36 pb-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-900 via-slate-950 to-indigo-950 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-6xl font-bold text-white mb-6">
+          <h1 className="text-4xl sm:text-6xl font-extrabold mb-6 tracking-tight leading-[1.15]">
             Let's Build Something
-            <span className="block text-yellow-300">Amazing Together</span>
+            <span className="block bg-gradient-to-r from-slate-100 via-slate-200 to-indigo-200 bg-clip-text text-transparent mt-2 font-bold">
+              Amazing Together
+            </span>
           </h1>
-          <p className="text-xl text-purple-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Ready to transform your digital presence? Get in touch and let's discuss how SoloSuite can help your business grow and succeed online.
+          <p className="text-xl text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Ready to transform your digital presence? Get in touch and let's discuss how SoloSuite can help your business grow and succeed online with structured digital foundations.
           </p>
-          <div className="flex items-center justify-center gap-2 text-yellow-300">
-            <Zap className="w-5 h-5" />
-            <span className="font-semibold">Free consultation • Quick response • Custom solutions</span>
+          <div className="flex items-center justify-center gap-2 text-slate-400">
+            <Zap className="w-5 h-5 text-indigo-400" />
+            <span className="font-semibold text-sm sm:text-base tracking-wide uppercase">Free consultation • Quick response • Custom solutions</span>
           </div>
         </div>
       </section>
@@ -75,7 +77,7 @@ const Contact = () => {
 
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">
+              <h2 className="text-3xl font-bold text-slate-900 mb-8 tracking-tight">
                 Start Your Project Today
               </h2>
 
@@ -87,38 +89,38 @@ const Contact = () => {
               >
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-2">
+                    <label className="block text-sm font-semibold text-slate-700 mb-2">
                       Full Name *
                     </label>
                     <input
                       type="text"
                       name="name"
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all duration-300"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-slate-900 focus:border-transparent outline-none transition-all duration-300"
                       placeholder="Your full name"
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-2">
+                    <label className="block text-sm font-semibold text-slate-700 mb-2">
                       Email Address *
                     </label>
                     <input
                       type="email"
                       name="email"
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all duration-300"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-slate-900 focus:border-transparent outline-none transition-all duration-300"
                       placeholder="your@email.com"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">
                     Service Needed
                   </label>
                   <select
                     name="service"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all duration-300"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-slate-900 focus:border-transparent outline-none transition-all duration-300 bg-white"
                   >
                     <option value="">Select a service...</option>
                     <option value="digital-infrastructure">Digital Infrastructure</option>
@@ -132,14 +134,14 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">
                     Project Details *
                   </label>
                   <textarea
                     name="message"
                     required
                     rows={10}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent outline-none transition-all duration-300 resize-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-slate-900 focus:border-transparent outline-none transition-all duration-300 resize-none"
                     placeholder="Tell us about your project, goals, timeline, and any specific requirements..."
                   ></textarea>
                 </div>
@@ -147,7 +149,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-4 rounded-xl text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2 ${isSubmitting ? "opacity-70 cursor-not-allowed" : ""}`}
+                  className={`w-full bg-slate-900 text-white py-4 rounded-xl text-lg font-semibold hover:bg-slate-800 transition-all duration-300 flex items-center justify-center gap-2 shadow-sm ${isSubmitting ? "opacity-70 cursor-not-allowed" : ""}`}
                 >
                   <MessageCircle className="w-5 h-5" />
                   {isSubmitting ? "Sending..." : "Send Message & Get Quote"}
@@ -158,93 +160,93 @@ const Contact = () => {
 
             {/* Contact Information */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">
+              <h2 className="text-3xl font-bold text-slate-900 mb-8 tracking-tight">
                 Get In Touch
               </h2>
 
               <div className="space-y-6 mb-12">
-                <div className="bg-gradient-to-br from-purple-50 to-blue-50 p-6 rounded-2xl border border-purple-100">
+                <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                   <div className="flex items-center gap-4 mb-3">
-                    <div className="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center">
+                    <div className="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center">
                       <Mail className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900">Email Us</h3>
-                      <p className="text-purple-600 font-medium">hello@solosuitehq.com</p>
+                      <h3 className="font-semibold text-slate-900">Email Us</h3>
+                      <p className="text-slate-800 font-medium">hello@solosuitehq.com</p>
                     </div>
                   </div>
-                  <p className="text-gray-600 text-sm">Best for detailed project discussions</p>
+                  <p className="text-gray-500 text-sm">Best for detailed project discussions</p>
                 </div>
 
-                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-2xl border border-blue-100">
+                <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                   <div className="flex items-center gap-4 mb-3">
-                    <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center">
+                    <div className="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center">
                       <Phone className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900">Call Us</h3>
-                      <p className="text-blue-600 font-medium">+92 (335) 7200072</p>
+                      <h3 className="font-semibold text-slate-900">Call Us</h3>
+                      <p className="text-slate-800 font-medium">+92 (335) 7200072</p>
                     </div>
                   </div>
-                  <p className="text-gray-600 text-sm">Quick questions and consultations</p>
+                  <p className="text-gray-500 text-sm">Quick questions and consultations</p>
                 </div>
 
-                <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-2xl border border-green-100">
+                <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                   <div className="flex items-center gap-4 mb-3">
-                    <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center">
+                    <div className="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center">
                       <MapPin className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900">Location</h3>
-                      <p className="text-green-600 font-medium">Global Remote</p>
+                      <h3 className="font-semibold text-slate-900">Location</h3>
+                      <p className="text-slate-800 font-medium">Global Remote</p>
                     </div>
                   </div>
-                  <p className="text-gray-600 text-sm">Serving clients worldwide</p>
+                  <p className="text-gray-500 text-sm">Serving clients worldwide</p>
                 </div>
 
-                <div className="bg-gradient-to-br from-orange-50 to-yellow-50 p-6 rounded-2xl border border-orange-100">
+                <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                   <div className="flex items-center gap-4 mb-3">
-                    <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center">
+                    <div className="w-12 h-12 bg-slate-900 rounded-xl flex items-center justify-center">
                       <Clock className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900">Response Time</h3>
-                      <p className="text-orange-600 font-medium">Within 24 hours</p>
+                      <h3 className="font-semibold text-slate-900">Response Time</h3>
+                      <p className="text-slate-800 font-medium">Within 24 hours</p>
                     </div>
                   </div>
-                  <p className="text-gray-600 text-sm">We respond to all inquiries quickly</p>
+                  <p className="text-gray-500 text-sm">We respond to all inquiries quickly</p>
                 </div>
               </div>
 
               {/* Why Choose SoloSuite */}
-              <div className="bg-gray-50 p-8 rounded-3xl">
-                <h3 className="text-xl font-bold text-gray-900 mb-6">Why Choose SoloSuite?</h3>
+              <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+                <h3 className="text-xl font-bold text-slate-900 mb-6 tracking-tight">Why Choose SoloSuite?</h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-medium text-gray-900">Personal Attention</p>
+                      <p className="font-medium text-slate-900">Personal Attention</p>
                       <p className="text-sm text-gray-600">Direct communication with Founder</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-medium text-gray-900">Proven Results</p>
+                      <p className="font-medium text-slate-900">Proven Results</p>
                       <p className="text-sm text-gray-600">Track record of successful projects</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-medium text-gray-900">All-in-One Solution</p>
+                      <p className="font-medium text-slate-900">All-in-One Solution</p>
                       <p className="text-sm text-gray-600">Complete digital services under one roof</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-medium text-gray-900">Competitive Pricing</p>
+                      <p className="font-medium text-slate-900">Competitive Pricing</p>
                       <p className="text-sm text-gray-600">Quality services at affordable rates</p>
                     </div>
                   </div>
@@ -256,10 +258,10 @@ const Contact = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-slate-50 border-t border-b border-slate-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-slate-900 mb-4 tracking-tight">
               Frequently Asked Questions
             </h2>
             <p className="text-xl text-gray-600">
@@ -297,11 +299,11 @@ const Contact = () => {
               <div key={index} className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full p-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors duration-200"
+                  className="w-full p-6 text-left flex justify-between items-center hover:bg-slate-50 transition-colors duration-200"
                 >
-                  <h3 className="text-lg font-semibold text-gray-900 pr-4">{faq.question}</h3>
+                  <h3 className="text-lg font-semibold text-slate-900 pr-4">{faq.question}</h3>
                   {openFAQ === index ? (
-                    <ChevronUp className="w-5 h-5 text-purple-600 flex-shrink-0" />
+                    <ChevronUp className="w-5 h-5 text-slate-800 flex-shrink-0" />
                   ) : (
                     <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
                   )}
@@ -319,23 +321,23 @@ const Contact = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-gradient-to-br from-gray-900 to-black text-white">
+      <section className="py-20 bg-gradient-to-br from-slate-950 to-black text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-4xl font-bold mb-6 tracking-tight">
             Ready to Transform Your Business?
           </h2>
-          <p className="text-xl text-gray-300 mb-8">
+          <p className="text-xl text-slate-300 mb-8">
             Join hundreds of successful businesses who've chosen SoloSuite for their digital growth
           </p>
           <div className="flex items-center justify-center gap-1 mb-8">
             {[...Array(5)].map((_, i) => (
-              <Star key={i} className="w-6 h-6 text-yellow-400 fill-current" />
+              <Star key={i} className="w-6 h-6 text-amber-500 fill-current" />
             ))}
-            <span className="ml-2 text-gray-300">4.9/5 from 200+ clients</span>
+            <span className="ml-2 text-slate-300">4.9/5 from 200+ clients</span>
           </div>
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 inline-flex items-center gap-2"
+            className="bg-white text-slate-900 px-8 py-4 rounded-xl text-lg font-semibold hover:bg-slate-100 transition-colors inline-flex items-center gap-2 shadow-md"
           >
             <ArrowRight className="w-5 h-5" />
             Start Your Project Now
