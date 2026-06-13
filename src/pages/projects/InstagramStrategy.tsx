@@ -30,10 +30,10 @@ const InstagramStrategy = () => {
   };
 
   const contentPillars = [
-    { name: 'Educational', percentage: 40, color: 'bg-blue-500' },
-    { name: 'Behind-the-Scenes', percentage: 25, color: 'bg-purple-500' },
-    { name: 'User-Generated', percentage: 20, color: 'bg-green-500' },
-    { name: 'Promotional', percentage: 15, color: 'bg-orange-500' }
+    { name: 'Educational', percentage: 40, color: 'bg-slate-900' },
+    { name: 'Behind-the-Scenes', percentage: 25, color: 'bg-slate-700' },
+    { name: 'User-Generated', percentage: 20, color: 'bg-slate-500' },
+    { name: 'Promotional', percentage: 15, color: 'bg-slate-400' }
   ];
 
   const bestTimes = [
@@ -51,12 +51,12 @@ const InstagramStrategy = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-pink-50 to-purple-50">
+      <section className="pt-36 pb-20 px-4 sm:px-6 lg:px-8 bg-slate-50 border-b border-slate-150">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 mb-6 tracking-tight">
               Instagram Growth
-              <span className="block bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-slate-900 via-slate-800 to-indigo-950 bg-clip-text text-transparent">
                 Strategy That Works
               </span>
             </h1>
@@ -66,12 +66,12 @@ const InstagramStrategy = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
                 to="/contact"
-                className="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2"
+                className="bg-slate-900 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-slate-800 transition-all duration-300 shadow-sm flex items-center gap-2"
               >
-                <Zap className="w-5 h-5" />
+                <Zap className="w-5 h-5 text-indigo-400" />
                 Get This Strategy
               </Link>
-              <button className="border border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-medium hover:border-gray-400 transition-colors flex items-center gap-2">
+              <button className="border border-slate-300 text-slate-700 px-8 py-4 rounded-full text-lg font-medium hover:border-slate-400 hover:bg-white transition-colors flex items-center gap-2">
                 <BarChart3 className="w-5 h-5" />
                 View Full Case Study
               </button>
@@ -81,34 +81,34 @@ const InstagramStrategy = () => {
       </section>
 
       {/* Growth Metrics */}
-      <section className="py-20">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              The <span className="bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">Results</span>
+            <h2 className="text-4xl font-bold text-slate-900 mb-4 tracking-tight">
+              The <span className="bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">Results</span>
             </h2>
             <p className="text-xl text-gray-600">Data-driven growth that speaks for itself</p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-8 mb-16">
-            <div className="bg-gradient-to-br from-pink-50 to-pink-100 p-8 rounded-3xl text-center">
-              <div className="text-4xl font-bold text-pink-600 mb-2">5,500%</div>
-              <div className="text-gray-700 font-medium">Follower Growth</div>
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 mb-16">
+            <div className="bg-slate-50 border border-slate-100 p-8 rounded-3xl text-center">
+              <div className="text-4xl font-extrabold text-slate-900 mb-2">5,500%</div>
+              <div className="text-slate-800 font-semibold">Follower Growth</div>
               <div className="text-sm text-gray-500 mt-1">1.2K → 67K in 6 months</div>
             </div>
-            <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-3xl text-center">
-              <div className="text-4xl font-bold text-purple-600 mb-2">490%</div>
-              <div className="text-gray-700 font-medium">Engagement Rate</div>
+            <div className="bg-slate-50 border border-slate-100 p-8 rounded-3xl text-center">
+              <div className="text-4xl font-extrabold text-slate-900 mb-2">490%</div>
+              <div className="text-slate-800 font-semibold">Engagement Rate</div>
               <div className="text-sm text-gray-500 mt-1">2.1% → 12.4% average</div>
             </div>
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-3xl text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">7M+</div>
-              <div className="text-gray-700 font-medium">Total Reach</div>
+            <div className="bg-slate-50 border border-slate-100 p-8 rounded-3xl text-center">
+              <div className="text-4xl font-extrabold text-slate-900 mb-2">7M+</div>
+              <div className="text-slate-800 font-semibold">Total Reach</div>
               <div className="text-sm text-gray-500 mt-1">Peak month performance</div>
             </div>
-            <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-3xl text-center">
-              <div className="text-4xl font-bold text-green-600 mb-2">15</div>
-              <div className="text-gray-700 font-medium">Viral Posts</div>
+            <div className="bg-slate-50 border border-slate-100 p-8 rounded-3xl text-center">
+              <div className="text-4xl font-extrabold text-slate-900 mb-2">15</div>
+              <div className="text-slate-800 font-semibold">Viral Posts</div>
               <div className="text-sm text-gray-500 mt-1">100K+ views each</div>
             </div>
           </div>
@@ -116,9 +116,9 @@ const InstagramStrategy = () => {
           {/* Growth Charts */}
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Follower Growth Chart */}
-            <div className="bg-white p-8 rounded-3xl shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                <Users className="w-6 h-6 text-pink-600" />
+            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2 tracking-tight">
+                <Users className="w-6 h-6 text-slate-900" />
                 Follower Growth
               </h3>
               <div className="space-y-4">
@@ -126,23 +126,23 @@ const InstagramStrategy = () => {
                   <div key={index} className="flex items-center justify-between">
                     <span className="text-gray-600 font-medium w-12">{data.month}</span>
                     <div className="flex-1 mx-4">
-                      <div className="bg-gray-200 rounded-full h-3">
+                      <div className="bg-slate-100 rounded-full h-3">
                         <div
-                          className="bg-gradient-to-r from-pink-500 to-purple-500 h-3 rounded-full transition-all duration-1000"
+                          className="bg-slate-900 h-3 rounded-full transition-all duration-1000"
                           style={{ width: `${(data.count / 67300) * 100}%` }}
                         ></div>
                       </div>
                     </div>
-                    <span className="text-gray-900 font-bold w-16 text-right">{data.count.toLocaleString()}</span>
+                    <span className="text-slate-900 font-bold w-16 text-right">{data.count.toLocaleString()}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Engagement Rate Chart */}
-            <div className="bg-white p-8 rounded-3xl shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                <Heart className="w-6 h-6 text-pink-600" />
+            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2 tracking-tight">
+                <Heart className="w-6 h-6 text-slate-900" />
                 Engagement Rate
               </h3>
               <div className="space-y-4">
@@ -150,14 +150,14 @@ const InstagramStrategy = () => {
                   <div key={index} className="flex items-center justify-between">
                     <span className="text-gray-600 font-medium w-12">{data.month}</span>
                     <div className="flex-1 mx-4">
-                      <div className="bg-gray-200 rounded-full h-3">
+                      <div className="bg-slate-100 rounded-full h-3">
                         <div
-                          className="bg-gradient-to-r from-purple-500 to-pink-500 h-3 rounded-full transition-all duration-1000"
+                          className="bg-slate-700 h-3 rounded-full transition-all duration-1000"
                           style={{ width: `${(data.rate / 12.4) * 100}%` }}
                         ></div>
                       </div>
                     </div>
-                    <span className="text-gray-900 font-bold w-12 text-right">{data.rate}%</span>
+                    <span className="text-slate-900 font-bold w-12 text-right">{data.rate}%</span>
                   </div>
                 ))}
               </div>
@@ -167,20 +167,20 @@ const InstagramStrategy = () => {
       </section>
 
       {/* Strategy Breakdown */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-slate-50 border-y border-slate-150">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              The <span className="bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">Strategy</span>
+            <h2 className="text-4xl font-bold text-slate-900 mb-4 tracking-tight">
+              The <span className="bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">Strategy</span>
             </h2>
             <p className="text-xl text-gray-600">Proven tactics that drove explosive growth</p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
             {/* Content Pillars */}
-            <div className="bg-white p-8 rounded-3xl shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                <Target className="w-6 h-6 text-pink-600" />
+            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2 tracking-tight">
+                <Target className="w-6 h-6 text-slate-900" />
                 Content Pillars
               </h3>
               <div className="space-y-4">
@@ -188,9 +188,9 @@ const InstagramStrategy = () => {
                   <div key={index}>
                     <div className="flex justify-between items-center mb-2">
                       <span className="text-gray-700 font-medium">{pillar.name}</span>
-                      <span className="text-gray-900 font-bold">{pillar.percentage}%</span>
+                      <span className="text-slate-900 font-bold">{pillar.percentage}%</span>
                     </div>
-                    <div className="bg-gray-200 rounded-full h-2">
+                    <div className="bg-slate-100 rounded-full h-2">
                       <div
                         className={`${pillar.color} h-2 rounded-full transition-all duration-1000`}
                         style={{ width: `${pillar.percentage}%` }}
@@ -202,20 +202,20 @@ const InstagramStrategy = () => {
             </div>
 
             {/* Posting Schedule */}
-            <div className="bg-white p-8 rounded-3xl shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                <Calendar className="w-6 h-6 text-purple-600" />
+            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2 tracking-tight">
+                <Calendar className="w-6 h-6 text-slate-900" />
                 Optimal Timing
               </h3>
               <div className="space-y-3">
                 {bestTimes.map((time, index) => (
-                  <div key={index} className="flex justify-between items-center p-3 bg-gray-50 rounded-xl">
+                  <div key={index} className="flex justify-between items-center p-3 bg-slate-50 rounded-xl border border-slate-100">
                     <div>
-                      <div className="font-medium text-gray-900">{time.day}</div>
+                      <div className="font-semibold text-slate-900">{time.day}</div>
                       <div className="text-sm text-gray-600">{time.time}</div>
                     </div>
                     <div className="text-right">
-                      <div className="text-sm font-bold text-green-600">{time.engagement}</div>
+                      <div className="text-sm font-bold text-slate-900">{time.engagement}</div>
                       <div className="text-xs text-gray-500">avg. engagement</div>
                     </div>
                   </div>
@@ -224,27 +224,27 @@ const InstagramStrategy = () => {
             </div>
 
             {/* Key Tactics */}
-            <div className="bg-white p-8 rounded-3xl shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-                <TrendingUp className="w-6 h-6 text-blue-600" />
+            <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-2 tracking-tight">
+                <TrendingUp className="w-6 h-6 text-slate-900" />
                 Growth Tactics
               </h3>
               <div className="space-y-4">
-                <div className="p-4 bg-blue-50 rounded-xl">
-                  <h4 className="font-semibold text-blue-900 mb-2">Hashtag Strategy</h4>
-                  <p className="text-blue-700 text-sm">Mix of trending, niche, and branded hashtags (15-20 per post)</p>
+                <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                  <h4 className="font-semibold text-slate-900 mb-1">Hashtag Strategy</h4>
+                  <p className="text-gray-600 text-sm">Mix of trending, niche, and branded hashtags (15-20 per post)</p>
                 </div>
-                <div className="p-4 bg-purple-50 rounded-xl">
-                  <h4 className="font-semibold text-purple-900 mb-2">Story Engagement</h4>
-                  <p className="text-purple-700 text-sm">Interactive polls, Q&As, and behind-the-scenes content</p>
+                <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                  <h4 className="font-semibold text-slate-900 mb-1">Story Engagement</h4>
+                  <p className="text-gray-600 text-sm">Interactive polls, Q&As, and behind-the-scenes content</p>
                 </div>
-                <div className="p-4 bg-pink-50 rounded-xl">
-                  <h4 className="font-semibold text-pink-900 mb-2">Community Building</h4>
-                  <p className="text-pink-700 text-sm">Consistent engagement with followers and industry accounts</p>
+                <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                  <h4 className="font-semibold text-slate-900 mb-1">Community Building</h4>
+                  <p className="text-gray-600 text-sm">Consistent engagement with followers and industry accounts</p>
                 </div>
-                <div className="p-4 bg-green-50 rounded-xl">
-                  <h4 className="font-semibold text-green-900 mb-2">Trend Leveraging</h4>
-                  <p className="text-green-700 text-sm">Quick adaptation to trending audio and formats</p>
+                <div className="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                  <h4 className="font-semibold text-slate-900 mb-1">Trend Leveraging</h4>
+                  <p className="text-gray-600 text-sm">Quick adaptation to trending audio and formats</p>
                 </div>
               </div>
             </div>
@@ -253,11 +253,11 @@ const InstagramStrategy = () => {
       </section>
 
       {/* Implementation Timeline */}
-      <section className="py-20">
+      <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Implementation <span className="bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">Timeline</span>
+            <h2 className="text-4xl font-bold text-slate-900 mb-4 tracking-tight">
+              Implementation <span className="bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">Timeline</span>
             </h2>
             <p className="text-xl text-gray-600">How we executed this strategy step by step</p>
           </div>
@@ -268,35 +268,35 @@ const InstagramStrategy = () => {
                 phase: "Week 1-2",
                 title: "Audit & Strategy Development",
                 description: "Comprehensive account audit, competitor analysis, and content strategy development",
-                color: "from-blue-500 to-blue-600"
+                color: "bg-slate-900"
               },
               {
                 phase: "Week 3-4",
                 title: "Content Creation & Optimization",
                 description: "Profile optimization, content calendar creation, and initial content batch production",
-                color: "from-purple-500 to-purple-600"
+                color: "bg-slate-800"
               },
               {
                 phase: "Month 2-3",
                 title: "Consistent Execution",
                 description: "Daily posting, story engagement, hashtag optimization, and community building",
-                color: "from-pink-500 to-pink-600"
+                color: "bg-slate-700"
               },
               {
                 phase: "Month 4-6",
                 title: "Scale & Optimize",
                 description: "Data analysis, strategy refinement, viral content creation, and growth acceleration",
-                color: "from-green-500 to-green-600"
+                color: "bg-slate-600"
               }
             ].map((phase, index) => (
               <div key={index} className="flex items-start gap-6">
-                <div className={`w-16 h-16 bg-gradient-to-br ${phase.color} rounded-2xl flex items-center justify-center text-white font-bold flex-shrink-0`}>
+                <div className={`w-16 h-16 ${phase.color} rounded-2xl flex items-center justify-center text-white font-bold flex-shrink-0 shadow-sm`}>
                   {index + 1}
                 </div>
                 <div className="flex-1">
-                  <div className="flex items-center gap-4 mb-2">
-                    <h3 className="text-xl font-bold text-gray-900">{phase.title}</h3>
-                    <span className="text-sm font-medium text-gray-500 bg-gray-100 px-3 py-1 rounded-full">{phase.phase}</span>
+                  <div className="flex flex-wrap items-center gap-4 mb-2">
+                    <h3 className="text-xl font-bold text-slate-900">{phase.title}</h3>
+                    <span className="text-sm font-medium text-slate-700 bg-slate-100 px-3 py-1 rounded-full">{phase.phase}</span>
                   </div>
                   <p className="text-gray-600 leading-relaxed">{phase.description}</p>
                 </div>
@@ -307,26 +307,29 @@ const InstagramStrategy = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-pink-600 to-purple-600">
+      <section className="py-20 bg-gradient-to-br from-slate-950 to-slate-900 text-white border-t border-slate-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">
+          <h2 className="text-4xl font-bold text-white mb-6 tracking-tight">
             Ready to Replicate This Success?
           </h2>
-          <p className="text-xl text-pink-100 mb-12 max-w-2xl mx-auto">
+          <p className="text-xl text-slate-300 mb-12 max-w-2xl mx-auto leading-relaxed">
             Get the exact strategy, templates, and guidance that drove 5,500% follower growth and 7M+ reach.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               to="/contact"
-              className="bg-white text-pink-600 px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2 justify-center"
+              className="bg-white text-slate-900 px-8 py-4 rounded-full text-lg font-semibold hover:bg-slate-100 transition-all duration-300 shadow-sm flex items-center gap-2 justify-center"
             >
-              <TrendingUp className="w-5 h-5" />
+              <TrendingUp className="w-5 h-5 text-indigo-600" />
               Get This Strategy
             </Link>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-white hover:text-pink-600 transition-all duration-300 flex items-center gap-2 justify-center">
+            <Link
+              to="/contact"
+              className="border-2 border-white/80 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-white hover:text-slate-950 transition-all duration-300 flex items-center gap-2 justify-center"
+            >
               <MessageCircle className="w-5 h-5" />
               Schedule Consultation
-            </button>
+            </Link>
           </div>
         </div>
       </section>
