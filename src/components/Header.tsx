@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+              <Link to="/" className="text-2xl font-bold text-slate-900 tracking-tight">
                 SoloSuite
               </Link>
             </div>
@@ -17,31 +17,31 @@ const Header = () => {
             <div className="ml-10 flex items-baseline space-x-8">
               <Link 
                 to="/#about" 
-                className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-600 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
               >
                 About
               </Link>
               <Link 
                 to="/#services" 
-                className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-600 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Services
               </Link>
               <Link 
                 to="/#projects" 
-                className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-600 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Projects
               </Link>
               <Link 
                 to="/contact" 
-                className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-gray-600 hover:text-slate-900 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Contact
               </Link>
               <Link 
                 to="/#contact" 
-                className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
+                className="bg-slate-900 text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-slate-800 transition-colors shadow-sm"
               >
                 Get Started
               </Link>
